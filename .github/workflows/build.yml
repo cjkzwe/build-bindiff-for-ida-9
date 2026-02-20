@@ -51,6 +51,7 @@ jobs:
       run: |
         cd bindiff
         git apply ../patches/bindiff-ida91-compatibility.patch
+        git apply ../patches/bindiff-abseil-mutexlock-fix.patch
 
     - name: Install ninja-build tool
       uses: aseprite/get-ninja@main
